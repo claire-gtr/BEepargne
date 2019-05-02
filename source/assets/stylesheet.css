@@ -6,6 +6,7 @@
     --dark-blue: #0D1B2A;
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
+    --font-size-container-titles: 4rem;
     --font-size-titles: 1.5rem;
     --font-size-texts: 0.9rem;
     --base-padding: 3rem;
@@ -52,7 +53,7 @@ body {
 }
 
 .container-ashtag {
-  padding: var(--base-padding);
+  background-color: #A3CEF1;
 }
 
 .text {
@@ -63,6 +64,10 @@ body {
 .title {
   font-family: var(--font-titles);
   font-size: var(--font-size-titles);
+}
+
+.container-title {
+  font-size: --font-size-container-titles;
 }
 
 .card {
