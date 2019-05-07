@@ -1,5 +1,5 @@
 :root{
-    --blue: #125A8E;
+    --blue: #1670B7;
     --yankee-blue: #1B2845;
     --acajou: #4C212A;
     --charcoal: #3A405A;
@@ -10,6 +10,7 @@
     --font-size-titles: 1.5rem;
     --font-size-texts: 0.9rem;
     --base-padding: 3rem;
+    --grey-text: rgba(0,0,0,.5);
   }
 
 body {
@@ -44,16 +45,12 @@ body {
 }
 
 .navbar-be .navbar-brand img {
-  width: 2.5rem;
+  width: 6rem;
 }
 
 .nav-link {
   font-family: var(--font-texts);
   font-size: var(--font-size-texts);
-}
-
-.container-ashtag {
-  background-color: #A3CEF1;
 }
 
 .text {
@@ -80,6 +77,11 @@ body {
   border: 1px solid var(--blue);
 }
 
+.btn-be:hover {
+  color:white;
+  font-weight: bold;
+}
+
 .card-header {
   border-bottom: 1px solid light-grey;
   background-color: white;
@@ -87,12 +89,32 @@ body {
 
 .btn-link {
   text-decoration: none !important;
-  color: grey;
+  color: var(--grey-text);
 }
 
 .btn-link:hover {
   text-decoration: none !important;
   color: black;
+}
+
+.footer {
+  background: white;
+  height: 6rem;
+  padding: 0 4rem;
+}
+
+.footer-links a {
+  color: var(--grey-text);
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+.footer-links a:hover {
+  color: black;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
 }
 
 

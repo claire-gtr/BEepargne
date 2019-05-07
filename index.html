@@ -22,12 +22,10 @@
   </head>
   <body>
 
-<!-- NAVBAR -->
-
-    <nav class="navbar navbar-expand-sm navbar-light navbar-be">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-light navbar-be shadow-sm p-3 mb-5">
       <a class="navbar-brand" href="#">
-        LOGO
-        <!-- <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" /> -->
+        <img src="source/assets/images/logoBE.png"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,35 +49,36 @@
       </div>
     </nav>
 
+    <!-- PARTICLES ID-->
     <div id="particles-js">
     </div>
 
-    <div class="container-fluid container-ashtag p-4">
-      <div class="container">
-        <div class="row m-4">
-          <div class="col" data-aos="fade-right">
-            IMAGE
+
+    <div class="container">
+      <div class="row m-4">
+        <div class="col" data-aos="fade-right">
+          IMAGE
+        </div>
+        <div class="col" data-aos="fade-left">
+          <div class="text text-right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dicta voluptatem, natus quibusdam est perferendis fugit maxime, corporis placeat porro. Omnis sequi iure atque quae quis, repudiandae molestias pariatur perferendis.
           </div>
-          <div class="col" data-aos="fade-left">
-            <div class="text text-right">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dicta voluptatem, natus quibusdam est perferendis fugit maxime, corporis placeat porro. Omnis sequi iure atque quae quis, repudiandae molestias pariatur perferendis.
-            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row m-4">
+        <div class="col" data-aos="fade-right">
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dicta voluptatem, natus quibusdam est perferendis fugit maxime, corporis placeat porro. Omnis sequi iure atque quae quis, repudiandae molestias pariatur perferendis.
           </div>
+        </div>
+        <div class="col" data-aos="fade-left">
+          IMAGE
         </div>
       </div>
 
-      <div class="container">
-        <div class="row m-4">
-          <div class="col" data-aos="fade-right">
-            <div class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dicta voluptatem, natus quibusdam est perferendis fugit maxime, corporis placeat porro. Omnis sequi iure atque quae quis, repudiandae molestias pariatur perferendis.
-            </div>
-          </div>
-          <div class="col" data-aos="fade-left">
-            IMAGE
-          </div>
-        </div>
-      </div>
 
       <div class="container">
         <div class="row m-4">
@@ -95,7 +94,7 @@
       </div>
     </div>
 
-    <div class="container container-tarifs">
+    <div class="container">
       <div class="row">
         <div class="col">
           <h1 class="container-title text-center mt-4 mb-0">Tarifs</h1>
@@ -104,7 +103,7 @@
 
       <div class="row">
         <div class="col-xs-12 col-md-4">
-          <div class="card shadow p-3 my-5 bg-white rounded text-center">
+          <div class="card shadow p-3 my-5 bg-white rounded text-center" data-aos="zoom-in">
             <div class="card-title title mb-0">
               Gratuit
             </div>
@@ -121,7 +120,7 @@
         </div>
 
         <div class="col-xs-12 col-md-4">
-          <div class="card shadow p-3 my-5 bg-white rounded text-center">
+          <div class="card shadow p-3 my-5 bg-white rounded text-center" data-aos="zoom-in">
             <div class="card-title title mb-0">
               Premium
             </div>
@@ -138,7 +137,7 @@
         </div>
 
         <div class="col-xs-12 col-md-4">
-          <div class="card shadow p-3 my-5 bg-white rounded text-center">
+          <div class="card shadow p-3 my-5 bg-white rounded text-center" data-aos="zoom-in">
             <div class="card-title title mb-0">
               Entreprises
             </div>
@@ -159,8 +158,11 @@
 
     <div class="container container-faq">
       <h1 class="container-title text-center m-4"> Foire aux questions</h1>
-      <div class="row">
-        <div class="col">
+      <div class="row d-flex h-100">
+        <div class="col-8 offset-2 col-md-3 offset-md-0 justify-content-center align-self-center">
+          <img src="source/assets/images/questions.svg" class="illustration p-5 p-md-0"/>
+        </div>
+        <div class="col-12 col-md-9">
           <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -214,16 +216,46 @@
       <h1 class="container-title text-center m-4"> Nous contacter </h1>
     </div>
 
-    <div class="container container-contact ">
+    <div class="container container-about ">
       <h1 class="container-title text-center m-4"> Qui sommes nous ? </h1>
+      <img src="source/assets/images/team.svg" class="illustration"/>
+      <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio deserunt quo eum! Officiis nihil recusandae soluta possimus similique praesentium dolores. Natus quos consequuntur placeat odit voluptatibus nostrum quia aliquid mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sequi blanditiis nisi. Magnam harum nisi, pariatur quod mollitia error a iure fugit assumenda obcaecati voluptas provident vel! Blanditiis, delectus, repellendus.
+      </div>
     </div>
 
-    <div class="container container-contact ">
+    <div class="container container-security ">
       <h1 class="container-title text-center m-4"> Sécurité </h1>
+      <img src="source/assets/images/security.svg" class="illustration"/>
+      <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio deserunt quo eum! Officiis nihil recusandae soluta possimus similique praesentium dolores. Natus quos consequuntur placeat odit voluptatibus nostrum quia aliquid mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus iusto, fugiat dolore error hic cumque magni quod numquam, modi blanditiis possimus repudiandae facilis. Necessitatibus quia rem, commodi fugit repellendus.
+      </div>
     </div>
 
-    <div class="container container-contact ">
-      <h1 class="container-title text-center m-4"> Footer </h1>
+    <!-- FOOTER -->
+    <div class="footer d-flex justify-content-center">
+      <div class="footer-links d-flex align-items-center">
+        <a href="#" class="text" data-toggle="modal" data-target="#exampleModalLong">Mentions légales</a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title title" id="exampleModalLongTitle">Mentions légales</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deleniti quibusdam consequatur, perspiciatis dolor accusantium ducimus expedita eos fuga numquam ipsa dolore, corrupti repudiandae corporis quam soluta minima fugiat earum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deleniti quibusdam consequatur, perspiciatis dolor accusantium ducimus expedita eos fuga numquam ipsa dolore, corrupti repudiandae corporis quam soluta minima fugiat earum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deleniti quibusdam consequatur, perspiciatis dolor accusantium ducimus expedita eos fuga numquam ipsa dolore, corrupti repudiandae corporis quam soluta minima fugiat earum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deleniti quibusdam consequatur, perspiciatis dolor accusantium ducimus expedita eos fuga numquam ipsa dolore, corrupti repudiandae corporis quam soluta minima fugiat earum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deleniti quibusdam consequatur, perspiciatis dolor accusantium ducimus expedita eos fuga numquam ipsa dolore, corrupti repudiandae corporis quam soluta minima fugiat earum!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="text">CGV</a>
+        <a href="#" class="text">Qui sommes nous ?</a>
+      </div>
     </div>
 
     <!-- JS PARTICLES -->
