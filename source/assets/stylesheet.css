@@ -1,21 +1,27 @@
 :root{
     --blue: #1670B7;
-    --yankee-blue: #1B2845;
-    --acajou: #4C212A;
-    --charcoal: #3A405A;
     --dark-blue: #0D1B2A;
+    --light-blue: #F6F8FB;
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
+    --font-color-texts: #444444;
     --font-size-container-titles: 4rem;
     --font-size-titles: 1.5rem;
     --font-size-texts: 0.9rem;
-    --base-padding: 3rem;
-    --grey-text: rgba(0,0,0,.5);
+    --base-padding: 2rem;
   }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.main-container {
+ min-height: 100vh;
+ overflow: hidden;
+ display: block;
+ position: relative;
+ background-color: white;
 }
 
 #particles-js {
@@ -27,7 +33,7 @@ body {
 .navbar-be {
   justify-content: space-between;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 var(--base-padding);
   position: fixed;
   height: 4.5rem;
   top: 0;
@@ -45,7 +51,7 @@ body {
 }
 
 .navbar-be .navbar-brand img {
-  width: 6rem;
+  width: 5.5rem;
 }
 
 .nav-link {
@@ -56,13 +62,21 @@ body {
 .text {
   font-family: var(--font-texts);
   font-size: var(--font-size-texts);
+  color: var(--font-color-texts);
 }
+
 
 .title {
   font-family: var(--font-titles);
   font-size: var(--font-size-titles);
 }
+.container {
+  padding: var(--base-padding);
+}
 
+.container-fluid {
+  padding: var(--base-padding);
+}
 .container-title {
   font-size: --font-size-container-titles;
 }
@@ -71,25 +85,43 @@ body {
   border: none;
 }
 
-.btn-be {
+.button {
+  padding: 0.5rem 1.25rem;
+  border-radius: 3rem;
+  display: inline-block;
+}
+
+.button:hover {
+  text-decoration: none;
+  }
+
+.button-transparent {
+  color: var(--font-color-texts);
+  border: 1px solid var(--font-color-texts);
+  opacity: 0.6;
+  background: transparent;
+}
+
+.button-transparent:hover {
+  opacity: 1;
+  color: black;
+}
+
+.button-blue {
   background-color: var(--blue);
   color: white;
   border: 1px solid var(--blue);
 }
 
-.btn-be:hover {
+.button-blue:hover {
   color:white;
   font-weight: bold;
-}
-
-.card-header {
-  border-bottom: 1px solid light-grey;
-  background-color: white;
 }
 
 .btn-link {
   text-decoration: none !important;
   color: var(--grey-text);
+  padding:0;
 }
 
 .btn-link:hover {
@@ -97,19 +129,31 @@ body {
   color: black;
 }
 
+.card-header {
+  border-bottom: 1px solid light-grey;
+  background-color: white;
+  padding: 0.25rem;
+}
+
+.light-blue-background {
+  background-color: var(--light-blue);
+}
+.blue-background {
+  background-color: var(--blue);
+}
+
 .footer {
-  background: white;
   height: 6rem;
-  padding: 0 4rem;
+  padding: 0 var(--base-padding);
 }
 
 .footer-links a {
-  color: var(--grey-text);
+  color: white;
   text-decoration: none;
   padding: 0 0.5rem;
 }
 .footer-links a:hover {
-  color: black;
+  font-weight: bold;
 }
 
 .illustration {
