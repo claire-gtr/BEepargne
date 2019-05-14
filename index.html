@@ -26,8 +26,7 @@
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-sm navbar-light navbar-be shadow-sm p-3 mb-5">
         <a class="navbar-brand" href="#">
-          <img src="source/assets/images/logoBEwhite.png"/>
-          <img src="source/assets/images/logoBE.png"/>
+          <img/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -426,6 +425,13 @@
       });
       $(window).scroll(function(){
         $('.navbar-nav').toggleClass('scrolled', $(this).scrollTop() > window.innerHeight - 70);
+      });
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > window.innerHeight - 70) {
+          $('.navbar-brand img').attr('src','source/assets/images/logoBE.png');
+        } else {
+          $('.navbar-brand img').attr('src','source/assets/images/logoBEwhite.png')
+        }
       });
     </script>
 
