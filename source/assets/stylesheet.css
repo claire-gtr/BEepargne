@@ -29,6 +29,15 @@ body {
   height:100vh;
   background: var(--blue);
 }
+.banner-video {
+  max-width: 15rem;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  padding: 5rem;
+}
 
 .navbar-be {
   justify-content: space-between;
