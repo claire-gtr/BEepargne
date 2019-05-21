@@ -39,6 +39,9 @@ body {
 
 .container-home {
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   z-index: auto;
   margin-top: 6rem;
@@ -58,11 +61,7 @@ body {
   top: 0;
   transition: 500ms ease;
   z-index: 500;
-  background-color: transparent;
-}
-
-.scrolled {
-  background-color: white !important;
+  background-color: white;
 }
 
 .navbar-be .navbar-collapse {
@@ -182,24 +181,6 @@ body {
   width: 100%;
   height: auto;
 }
-
-/*.alert {
-  margin: 0;
-  text-align: center;
-  color: var(--font-color-texts);
-  position: absolute;
-  top: 4.5rem;
-  width: 100%;
-  border-color: transparent;
-  z-index: 1000;
-}
-.alert-info {
-  background: #D5F4D6;
-}
-.alert-warning {
-  background: #c66655;
-}*/
-
 
 form > div > input[type="text"], form > div > input[type="email"] {
   width: 100%;
