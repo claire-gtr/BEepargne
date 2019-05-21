@@ -46,6 +46,7 @@ body {
 
 .link-video {
   text-decoration: none !important;
+  font-size: 2rem !important;
 }
 
 .navbar-be {
@@ -181,5 +182,38 @@ body {
   width: 100%;
   height: auto;
 }
+
+/*.alert {
+  margin: 0;
+  text-align: center;
+  color: var(--font-color-texts);
+  position: absolute;
+  top: 4.5rem;
+  width: 100%;
+  border-color: transparent;
+  z-index: 1000;
+}
+.alert-info {
+  background: #D5F4D6;
+}
+.alert-warning {
+  background: #c66655;
+}*/
+
+
+form > div > input[type="text"], form > div > input[type="email"] {
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+  background: #eee;
+}
+
+form > div > input[type="text"]:valid, form > div > input[type="email"]:valid {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 
 

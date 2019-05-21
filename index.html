@@ -59,16 +59,8 @@
         <div class="container container-home">
           <div class="row">
             <div class="col-xs-12 col-md-6">
-              <div class="title text-white">
-                Boost Épargne <br>
-              </div>
-              <div class="text text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iusto modi qui expedita impedit dolorum eaque quo iure laborum eius, voluptatem facere vitae natus illo earum, deserunt blanditiis veritatis. Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corrupti nobis esse, earum delectus molestias iste nesciunt distinctio accusamus nostrum maxime harum neque eos quo commodi facilis est totam consequuntur!
-              </div>
-              <br><br><br>
               <a href="#" class="text text-white link-video" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/bgTlt5-l-AA">
-                <i class="fas fa-play"></i> Voir la vidéo</a>
-
+                <i class="fas fa-play"></i> Découvrez notre service en vidéo</a>
               <div class="modal fade modal-video" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
                   <div class="modal-dialog">
                       <div class="modal-content">
@@ -368,18 +360,19 @@
         <h1 class="container-title text-center m-4"> Nous contacter </h1>
         <div class="row d-flex h-100">
           <div class="col">
-            <form>
+            <form method="post">
               <div class="form-group">
-                <label for="exampleInputName" class="text">Votre nom</label>
-                <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="">
-                <label for="exampleInputEmail1" class="text">Votre e-mail adresse</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-                <small id="emailHelp" class="form-text text-muted" class="text">Nous ne partagerons pas votre e-mail.</small>
-                <label for="exampleFormControlTextarea1" class="text">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="first_name" class="text">Votre nom</label>
+                <input required type="text" name="first_name" class="form-control" id="first_name" placeholder="">
+                <label for="email" class="text">Votre e-mail</label>
+                <input required type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" inputmode="email">
+                <small id="emailHelp" class="form-text text-muted" class="text">Il doit s'agir d'une adresse email valide. Nous ne partagerons pas votre e-mail.</small>
+                <label for="textArea" class="text">Message</label>
+                <textarea required name="message" class="form-control" id="textArea" rows="3"></textarea>
               </div>
-              <button type="submit" class="button button-blue">Envoyer</button>
+              <button type="submit" class="button button-blue"> <a href="http://www.touareb.com/boost_epargne/send_mail.php"></a>Envoyer</button>
             </form>
+
           </div>
           <div class="col-8 offset-2 col-md-3 offset-md-0 justify-content-center align-self-center">
             <img src="source/assets/images/contact.svg" class="illustration p-2" data-aos="fade-left"/>
@@ -521,6 +514,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- JS MODAL VIDEO BANNER -->
     <script>
       autoPlayYouTubeModal();
       //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
