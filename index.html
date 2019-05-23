@@ -28,7 +28,7 @@
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-sm navbar-light navbar-be shadow-sm p-3 mb-5">
         <a class="navbar-brand" href="#">
-          <img/>
+          <img class="logo" src="source/assets/images/logoBEwhite.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -503,7 +503,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- JS NAVBAR BACKGROUND COLOR CHANGING ON SCROLL -->
+    <!-- JS NAVBAR BACKGROUND COLOR & LOGO CHANGING ON SCROLL -->
     <script>
       $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() > window.innerHeight - 70);
@@ -511,15 +511,18 @@
       $(window).scroll(function(){
         $('.navbar-nav').toggleClass('scrolled', $(this).scrollTop() > window.innerHeight - 70);
       });
+
       $(window).scroll(function(){
         $('.nav-link').toggleClass('nav-link-scrolled', $(this).scrollTop() > window.innerHeight - 70);
       });
-      $(window).scroll(function(){
-        if ($(this).scrollTop() > window.innerHeight - 70) {
-          $('.navbar-brand img').attr('src','source/assets/images/logoBE.png');
-        } else {
-          $('.navbar-brand img').attr('src','source/assets/images/logoBEwhite.png')
-        }
+      var initialSrc = "source/assets/images/logoBEwhite.png";
+      var scrollSrc = "source/assets/images/logoBE.png";
+      $(window).scroll(function() {
+         var value = $(this).scrollTop();
+         if (value > window.innerHeight - 70)
+            $(".logo").attr("src", scrollSrc);
+         else
+            $(".logo").attr("src", initialSrc);
       });
     </script>
 
