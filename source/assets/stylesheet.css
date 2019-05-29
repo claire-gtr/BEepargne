@@ -2,7 +2,7 @@
     --blue: #1670B7;
     --dark-blue: #0D1B2A;
     --light-blue: #F6F8FB;
-    --light-blue-highlight-text: #edf2f9;
+    --light-blue-highlight-text: #DFEAF4;
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
     --font-color-texts: #444444;
@@ -50,11 +50,12 @@ body {
 
 .link-video {
   text-decoration: none !important;
-  font-size: 2rem !important;
+  font-size: 3.75rem !important;
 }
 
 .icon-red {
   color: #C73F3F;
+  font-size: 3.5rem;
 }
 
 .navbar-be {
@@ -178,6 +179,7 @@ body {
 .light-blue-highlight {
   background-color: var(--light-blue-highlight-text);
   padding: 1rem;
+  border-radius: 0.3rem;
 }
 
 .blue-background {
