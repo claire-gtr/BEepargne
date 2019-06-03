@@ -70,6 +70,10 @@ body {
   background-color: transparent;
 }
 
+.navbar-nav {
+  background-color: var(--blue);
+}
+
 .scrolled {
   background-color: white !important;
 }
@@ -114,7 +118,7 @@ body {
   padding: var(--base-padding);
 }
 .container-title {
-  font-size: --font-size-container-titles;
+  font-size: var(--font-size-container-titles);
 }
 
 
