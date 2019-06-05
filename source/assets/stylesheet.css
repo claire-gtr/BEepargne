@@ -103,7 +103,7 @@ margin-top: 8rem;
   background-color: transparent;
 }
 
-.navbar-nav {
+.navbar-collapse {
   background-color: var(--blue);
   transition: 500ms ease;
   z-index: -3;
