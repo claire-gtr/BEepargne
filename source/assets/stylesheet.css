@@ -3,6 +3,7 @@
     --dark-blue: #0D1B2A;
     --light-blue: #F6F8FB;
     --light-blue-highlight-text: #DFEAF4;
+    --red:#C73F3F;
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
     --font-color-texts: #444444;
@@ -50,12 +51,13 @@ body {
 
 .link-video {
   text-decoration: none !important;
-  font-size: 3.75rem !important;
+  font-size: var(--font-size-container-titles);
+  font-family: var(--font-texts);
 }
 
 .icon-red {
-  color: #C73F3F;
-  font-size: 3.5rem;
+  color: var(--red);
+  font-size: var(--font-size-container-titles);
 }
 
 #overlay {
@@ -106,25 +108,18 @@ margin-top: 8rem;
 .navbar-nav {
   background-color: var(--blue);
   transition: 500ms ease;
-  z-index: -3;
 }
 
 .scrolled {
-  background-color: white !important;
+  background-color: white;
 }
 
-.navbar-be .navbar-collapse {
+.navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-be .navbar-brand img {
   width: 5.5rem;
-}
-
-.nav-link {
-  font-family: var(--font-texts) !important;
-  font-size: var(--font-size-texts) !important;
-  color: white !important;
 }
 
 .nav-link-scrolled {
@@ -143,8 +138,9 @@ margin-top: 8rem;
 }
 
 .text-white {
-  color: white !important;
+  color: white;
 }
+
 .container {
   padding: var(--base-padding);
 }
@@ -152,10 +148,10 @@ margin-top: 8rem;
 .container-fluid {
   padding: var(--base-padding);
 }
+
 .container-title {
   font-size: var(--font-size-container-titles);
 }
-
 
 .card {
   border: none;
@@ -169,7 +165,7 @@ margin-top: 8rem;
 
 .button:hover {
   text-decoration: none;
-  }
+}
 
 .button-transparent {
   color: var(--font-color-texts);
