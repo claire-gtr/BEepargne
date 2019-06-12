@@ -7,7 +7,7 @@
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
     --font-color-texts: #444444;
-    --font-size-container-titles: 4rem;
+    --font-size-container-titles: 3.5rem;
     --font-size-titles: 1.5rem;
     --font-size-texts: 0.9rem;
     --base-padding: 2rem;
@@ -52,7 +52,7 @@ body {
 .link-video {
   text-decoration: none !important;
   font-size: var(--font-size-container-titles);
-  font-family: var(--font-texts);
+  font-family: var(--font-titles);
 }
 
 .icon-red {
@@ -126,6 +126,13 @@ margin-top: 8rem;
   color: var(--font-color-texts) !important;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -4.5rem;
+    visibility: hidden;
+}
+
 .text {
   font-family: var(--font-texts);
   font-size: var(--font-size-texts);
@@ -151,6 +158,7 @@ margin-top: 8rem;
 
 .container-title {
   font-size: var(--font-size-container-titles);
+  font-family: var(--font-titles);
 }
 
 .card {
