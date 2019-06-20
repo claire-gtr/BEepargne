@@ -301,18 +301,18 @@ transition: .5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.col-sm-4:nth-child(1) .card-prices ,
-.col-sm-4:nth-child(1) .card-prices .title .fa{
+.col-md-4:nth-child(1) .card-prices ,
+.col-md-4:nth-child(1) .card-prices .title .fa{
   background: linear-gradient(-45deg,#f403d1,#64b5f6);
 
 }
-.col-sm-4:nth-child(2) .card-prices,
-.col-sm-4:nth-child(2) .card-prices .title .fa{
+.col-md-4:nth-child(2) .card-prices,
+.col-md-4:nth-child(2) .card-prices .title .fa{
   background: linear-gradient(-45deg,#ffec61,#f321d7);
 
 }
-.col-sm-4:nth-child(3) .card-prices,
-.col-sm-4:nth-child(3) .card-prices .title .fa{
+.col-md-4:nth-child(3) .card-prices,
+.col-md-4:nth-child(3) .card-prices .title .fa{
   background: linear-gradient(-45deg,#24ff72,#9a4eff);
 
 }
