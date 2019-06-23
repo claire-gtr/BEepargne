@@ -287,7 +287,7 @@ form > div > input[type="text"]:valid, form > div > input[type="email"]:valid {
   position: relative;
   max-width: 300px;
   height: auto;
-  background: linear-gradient(-45deg,#fe0847,#feae3f);
+  background: linear-gradient(-45deg,#AC2B33,#F7932C);
   border-radius: 15px;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -303,17 +303,17 @@ transition: .5s;
 }
 .col-md-4:nth-child(1) .card-prices ,
 .col-md-4:nth-child(1) .card-prices .title .fa{
-  background: linear-gradient(-45deg,#f403d1,#64b5f6);
+  background: linear-gradient(-45deg,#BB3C91,#47BCAC);
 
 }
 .col-md-4:nth-child(2) .card-prices,
 .col-md-4:nth-child(2) .card-prices .title .fa{
-  background: linear-gradient(-45deg,#ffec61,#f321d7);
+  background: linear-gradient(-45deg,#FCC828,#BB3C91);
 
 }
 .col-md-4:nth-child(3) .card-prices,
 .col-md-4:nth-child(3) .card-prices .title .fa{
-  background: linear-gradient(-45deg,#24ff72,#9a4eff);
+  background: linear-gradient(-45deg,#2A735A,#FCC828);
 
 }
 .card-prices::before{
