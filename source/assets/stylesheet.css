@@ -303,17 +303,17 @@ transition: .5s;
 }
 .col-md-4:nth-child(1) .card-prices ,
 .col-md-4:nth-child(1) .card-prices .title .fa{
-  background: linear-gradient(-45deg,#BB3C91,#47BCAC);
+  background: linear-gradient(-45deg,#3673C2,#30C8CF);
 
 }
 .col-md-4:nth-child(2) .card-prices,
 .col-md-4:nth-child(2) .card-prices .title .fa{
-  background: linear-gradient(-45deg,#FCC828,#BB3C91);
+  background: linear-gradient(-45deg,#7B12C7,#BA1A95);
 
 }
 .col-md-4:nth-child(3) .card-prices,
 .col-md-4:nth-child(3) .card-prices .title .fa{
-  background: linear-gradient(-45deg,#2A735A,#FCC828);
+  background: linear-gradient(-45deg,#AD1A30,#C42614);
 
 }
 .card-prices::before{
