@@ -4,6 +4,7 @@
     --light-blue: #F6F8FB;
     --light-blue-highlight-text: #DFEAF4;
     --red:#C73F3F;
+    --grey: #D3D3D3;
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
     --font-color-texts: #444444;
@@ -408,8 +409,8 @@ font-size: 16px;
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 1.5px;
-  background-color: var(--blue);
+  width: 3px;
+  background-color: var(--grey);
   left: 50%;
   margin-left: -1.5px;
 }
@@ -442,7 +443,7 @@ font-size: 16px;
 .timeline > li > .timeline-panel {
   width: 46%;
   float: left;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 20px;
   position: relative;
 }
@@ -457,13 +458,19 @@ font-size: 16px;
   position: absolute;
   top: 16px;
   left: 50%;
-  margin-left: -16px;
+  margin-left: -15px;
   background-color: #999999;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+}
+
+.timeline-badge.timeline-badge-big {
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: -25px !important;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -474,6 +481,13 @@ font-size: 16px;
   background-color: var(--blue) !important;
 }
 
+.timeline-badge-blue {
+  background-color: var(--blue) !important;
+}
+
+.timeline-badge-grey {
+  background-color: var(--grey) !important;
+}
 
 .timeline-title {
   font-weight: bold;
