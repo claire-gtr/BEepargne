@@ -410,7 +410,7 @@ font-size: 16px;
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: var(--grey);
+  background-color: var(--blue);
   left: 50%;
   margin-left: -1.5px;
 }
