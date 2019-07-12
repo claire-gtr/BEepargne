@@ -4,7 +4,7 @@
     --light-blue: #F6F8FB;
     --light-blue-highlight-text: #DFEAF4;
     --red:#C73F3F;
-    --grey: #D3D3D3;
+    --grey: #EEEEEE;
     --font-titles: 'Rubik', sans-serif;
     --font-texts: 'Karla', sans-serif;
     --font-color-texts: #444444;
@@ -397,14 +397,13 @@ font-size: 16px;
     text-decoration: none;
 }
 
-
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 10px 0 10px;
   position: relative;
 }
 
-.timeline:before {
+.timeline-blue:before {
   top: 0;
   bottom: 0;
   position: absolute;
@@ -414,9 +413,19 @@ font-size: 16px;
   left: 50%;
   margin-left: -1.5px;
 }
+.timeline-grey:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: var(--grey);
+  left: 50%;
+  margin-left: -1.5px;
+}
 
 .timeline > li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -456,10 +465,9 @@ font-size: 16px;
   font-size: 1.4em;
   text-align: center;
   position: absolute;
-  top: 16px;
+  top: 0px;
   left: 50%;
   margin-left: -15px;
-  background-color: #999999;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -486,7 +494,7 @@ font-size: 16px;
 }
 
 .timeline-badge-grey {
-  background-color: var(--light-blue-highlight-text) !important;
+  background-color: var(--grey) !important;
 }
 
 .timeline-title {
