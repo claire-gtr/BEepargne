@@ -33,8 +33,6 @@
     <link rel="icon" href="source/assets/images/favicon.ico" />
     <!-- GOOGLE ANALYTICS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140941064-1"></script>
-
-
     <title>Boost Épargne</title>
   </head>
   <body>
@@ -163,7 +161,8 @@
 
         <div class="row">
           <div class="col text-center">
-            <div class="number-data">
+            <div class="number-data" id="counter1">
+<!-- CHANGE HERE NUMBER OF CLIENTS, CHANGE IT ALSO DOWN IN JS -->
               163
             </div>
             <div class="icon-data">
@@ -174,19 +173,26 @@
             </div>
           </div>
           <div class="col text-center">
-            <div class="number-data">
+            <div class="number-data" id="counter2">
+<!-- CHANGE HERE NUMBER OF ENCOURS, CHANGE IT ALSO DOWN IN JS -->
               276
             </div>
             <div class="icon-data">
-              <i class="fas fa-comments"></i>
+              <i class="fas fa-euro-sign"></i>
             </div>
             <div class="text-data">
               encours
             </div>
           </div>
           <div class="col text-center">
-            <div class="number-data">
-              89%
+            <div class="number-performance">
+              <div class="number-data" id="counter3">
+  <!-- CHANGE HERE NUMBER OF PERFORMANCE, CHANGE IT ALSO DOWN IN JS -->
+                89
+              </div>
+              <div class="number-data">
+                 %
+              </div>
             </div>
             <div class="icon-data">
               <i class="fas fa-chart-line"></i>
@@ -796,6 +802,28 @@
          else
             $(".logo").attr("src", initialSrc);
       });
+    </script>
+    <script>
+      function animateValue(id, start, end, duration) {
+          var range = end - start;
+          var current = start;
+          var increment = end > start? 1 : -1;
+          var stepTime = Math.abs(Math.floor(duration / range));
+          var obj = document.getElementById(id);
+          var timer = setInterval(function() {
+              current += increment;
+              obj.innerHTML = current;
+              if (current == end) {
+                  clearInterval(timer);
+              }
+          }, stepTime);
+      }
+ // CHANGE HERE NUMBER OF CLIENTS
+      animateValue("counter1", 0, 163, 5000);
+ // CHANGE HERE NUMBER OF ENCOURS
+      animateValue("counter2", 0, 276, 5000);
+ // CHANGE HERE NUMBER OF PERFORMANCE
+      animateValue("counter3", 0, 89, 5000);
     </script>
   </body>
 </html>

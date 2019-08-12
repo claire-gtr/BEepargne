@@ -254,6 +254,12 @@ a.anchor {
   font-size: 1.5rem;
 }
 
+.number-performance {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .footer {
   height: 8rem;
   padding: 0 var(--base-padding);
